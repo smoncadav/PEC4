@@ -59,7 +59,7 @@ Entrega de la PEC4
 1. Clone the repository and navigate to the project folder:
 ```bash
    git clone https://github.com/smoncadav/PEC4
-   cd PEC4
+   cd PEC4_modules
 ```
 
 2. Create and activate the virtual environment:
@@ -71,7 +71,7 @@ Entrega de la PEC4
 
 3. Install the package and its dependencies:
 ```bash
-   cd PEC4
+   cd PEC4_modules
    uv pip install -r requirements.txt
    uv pip install -e .
 ```
@@ -81,6 +81,38 @@ Entrega de la PEC4
 ```bash
    python src/main.py
 ```
+
+--------
+
+## Generating Documentation
+
+Documentation is generated with `pydoc` from the docstrings in each exercise module.
+
+### Steps
+
+1. Set the Python path so modules can be found:
+```bash
+export PYTHONPATH=/path/to/PEC4/PEC4_modules/src
+```
+
+2. Navigate to the `src` folder:
+```bash
+cd PEC4_modules/src/exercises
+```
+
+3. Generate HTML documentation for all exercises:
+```bash
+python -m pydoc -w ejercicio_1.py
+```
+
+This creates `.html` files in the current directory, one per module.
+
+4. To browse documentation interactively in the browser:
+```bash
+python -m pydoc -b
+```
+
+--------
 
 * This documentation has been co-created with Claude: 
 Reference: Anthropic. (2026). Claude (versión del 11 de junio de 2026) [Modelo de lenguaje grande]. https://claude.ai

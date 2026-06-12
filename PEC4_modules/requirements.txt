@@ -1,0 +1,10 @@
+matplotlib
+pydocs
+numpy
+pandas
+ruff
+kagglehub
+datetime
+networkx
+seaborn
+HtmlTestRunner

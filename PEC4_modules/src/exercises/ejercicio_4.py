@@ -4,7 +4,7 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-from PEC4 import config
+from PEC4_modules import config
 
 
 def FTR(data):

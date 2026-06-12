@@ -24,7 +24,7 @@ def load_and_eda(file):
     os.makedirs(dest, exist_ok=True)
     shutil.copy(csv_file, dest)
 
-    # Consulta: Consulta Anthropic. (2026). Claude (versión del 13 de mayo de 2026)
+    # Consulta: Consulta Anthropic. (2026). Claude (versión del 10 de junio de 2026)
     # [Modelo de lenguaje grande]. https://claude.ai
 
     return df

@@ -7,7 +7,7 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from PEC4 import config
+from PEC4_modules import config
 
 def goals_distribution(data):
 

@@ -1,5 +1,5 @@
-from PEC4.src import exercises
-from PEC4 import config
+from PEC4_modules.src import exercises
+from PEC4_modules import config
 import kagglehub
 
 
@@ -37,4 +37,5 @@ home_goals, away_goals, total_goals = exercises.ejercicio_6.fun_total_goals(matc
 tupla = exercises.ejercicio_6.fun_total_goals_by_team(df)
 
 # Ejecicio_7
-exercises.ejercicio_7.graf(data, selected_teams)
+selected_teams = exercises.ejercicio_7.selected_teams_fn(df_total_points)
+exercises.ejercicio_7.graf(df_total_points, selected_teams)

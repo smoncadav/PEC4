@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from PEC4 import config
+from PEC4_modules import config
 
 # define la función total_matches(data),
 
