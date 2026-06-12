@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pec4_sebastian_moncada_velasquez"
+version = "0.0.1"
+description = "Entrega de la PEC4"
+authors = [
+  { name = "Sebastian Moncadaa Velasquez" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "~=3.13.0"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 99
+src = ["src"]
+include = ["pyproject.toml", "pec4_sebastian_moncada_velasquez/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["exercises"]
+force-sort-within-sections = true
