@@ -58,7 +58,7 @@ Entrega de la PEC4
 
 1. Clone the repository and navigate to the project folder:
 ```bash
-   git clone <repository-url>
+   git clone https://github.com/smoncadav/PEC4
    cd PEC4
 ```
 
